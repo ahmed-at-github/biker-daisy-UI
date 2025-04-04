@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
- 
 
 
     <title>Biker Zone Daisy</title>
@@ -14,13 +17,50 @@
 </head>
 
 <body>
+    <!-- Header Starts -->
+    <header>
+        <nav class="navbar bg-[#264653] shadow-lg backdrop-blur-sm">
+            <div class="navbar-start">
+                <div class="text-white font-bold text-xl"></div>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-2">
+                    <li><a class="text-white">Home</a></li>
+                    <li><a class="text-white">Shop</a></li>
+                    <li><a class="text-white">News</a></li>
+                    <li><a class="text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-white rounded-box z-10 mt-3 w-52 p-2 shadow-xl right-0">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn bg-[#E76F51] text-white border-none btn-animated mr-32">Login</button>
+            </div>
+        </nav>
+    </header>
 
 
-   
 
-   
-    
-  
+
+
+
 </body>
 
 </html>
